@@ -1,0 +1,52 @@
+.bars{
+   font-size: 25px;
+   display: none;
+}
+
+.HeaderBottom{    
+    background-color: white;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin:0 auto;
+    height: 70px;
+    justify-content: space-around;
+}
+
+.navbar img{
+    width: 123px;
+    height: 50px;
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+}
+
+.navbar li{
+    margin: 10px ;
+    font-weight: bold;
+    color: #022737;
+}
+
+
+
+
+
+@media (max-width:768px) {
+    .navbar .navdata{
+        display: none;
+    }
+
+    .navbar{
+        justify-content: space-between;
+    }
+
+    .bars{
+        display: block;
+        margin: 20px;
+    }
+}

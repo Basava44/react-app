@@ -1,6 +1,5 @@
 import React from 'react';
 import {FaUser, FaEnvelope} from 'react-icons/fa';
-// import './HeaderTop.css';
 import classes from './HeaderTop.module.css';
 
 const HeaderTop = () => {
