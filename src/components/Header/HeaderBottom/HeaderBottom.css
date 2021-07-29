@@ -79,6 +79,10 @@
         align-items: center;
     }
 
+    .navbar li a{
+        font-weight: normal;
+    }
+
     .navbar .navdata:hover{
         border-bottom: none;
     }
