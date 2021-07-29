@@ -37,8 +37,4 @@
     .HeaderItems li:first-child{
         display: none;
     }
-
-    .HeaderItems{
-        justify-content: space-around;
-    }
 }

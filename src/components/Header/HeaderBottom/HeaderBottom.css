@@ -34,13 +34,13 @@
     font-weight: bold;
     color: #022737;
     text-decoration: none;
-    padding: 15px 0;
+    padding: 19px 0;
     font-size: 14px;
 }
 
-/* .navbar li a:hover{
+.navbar li a:hover{
     border-bottom: 4px solid #006778;
-} */
+}
 
 .navbar li:last-child{
     display: none;
@@ -79,14 +79,14 @@
         align-items: center;
     }
 
-    .navbar .navdata.responsive:hover{
-        border: none;
+    .navbar .navdata:hover{
+        border-bottom: none;
     }
 
 }
 
-@media (min-width:768px){
-    #root > div > div.HeaderBottom > nav > ul > li:nth-child(7){
+@media (max-width:767px) {
+    .navbar li:last-child{
         display: none;
     }
 }
