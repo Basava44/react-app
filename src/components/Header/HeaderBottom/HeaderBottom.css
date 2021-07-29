@@ -1,6 +1,9 @@
 .bars{
    font-size: 25px;
    display: none;
+   position: absolute;
+   right: 4%;
+   top: 12%;
 }
 
 .HeaderBottom{    
@@ -12,7 +15,7 @@
     align-items: center;
     max-width: 1200px;
     margin:0 auto;
-    height: 70px;
+    padding: 5px;
     justify-content: space-around;
 }
 
@@ -26,12 +29,22 @@
     list-style: none;
 }
 
-.navbar li{
+.navbar li a{
     margin: 10px ;
     font-weight: bold;
     color: #022737;
+    text-decoration: none;
+    padding: 15px 0;
+    font-size: 14px;
 }
 
+/* .navbar li a:hover{
+    border-bottom: 4px solid #006778;
+} */
+
+.navbar li:last-child{
+    display: none;
+}
 
 
 
@@ -42,11 +55,38 @@
     }
 
     .navbar{
-        justify-content: space-between;
+        display: block;
     }
 
-    .bars{
+    .bars, .navbar img, .navbar li:last-child{
+        display: block;        
+    }
+
+    .navbar .navdata.responsive{
         display: block;
-        margin: 20px;
+        text-align: left;
+        padding: 0;
+        line-height: 4;
+        height: 100vh;
+        font-weight: normal;
+        border-top: 1px solid #eaeaea;
+    }
+
+    .navbar .navdata.responsive li{
+        border-bottom: 1px solid #eaeaea;
+        display: block;
+        margin-top: 10px;
+        align-items: center;
+    }
+
+    .navbar .navdata.responsive:hover{
+        border: none;
+    }
+
+}
+
+@media (min-width:768px){
+    #root > div > div.HeaderBottom > nav > ul > li:nth-child(7){
+        display: none;
     }
 }

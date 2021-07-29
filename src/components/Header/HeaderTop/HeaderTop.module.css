@@ -34,7 +34,7 @@
 
 @media (max-width:767px)
 {
-    li:first-child{
+    .HeaderItems li:first-child{
         display: none;
     }
 

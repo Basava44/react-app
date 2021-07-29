@@ -1,26 +1,32 @@
-import React from "react";
+import React, {useState} from "react";
 import './HeaderBottom.css';
 import Logo from '../../../assets/images/logo.png';
 import { FaBars } from "react-icons/fa";
 
 
-const NavData = ['ACCOUNT SUMMARY','GRANTS','CONTRIBUTIONS','INVESTMENTS','RESOURCES','MY ACCOUNT',];
+
 
 const HeaderBottom = () => {
 
-    const navresponce = () =>{
-        console.log("hi");
-    }
+    const NavData = ['ACCOUNT SUMMARY','GRANTS','CONTRIBUTIONS','INVESTMENTS','RESOURCES','MY ACCOUNT','NEED ASSISTANCE?'];
+    
+    const [classname, changeClass] = useState("navdata");
 
+    const navresponce = () => {
+        if(classname === "navdata")
+            changeClass("navdata responsive");
+        else
+            changeClass("navdata");
+    }
 
     return ( 
         <div className="HeaderBottom">
             <nav className="navbar">
                 <img src={Logo} alt='logo' />
-                <ul className="navdata">
+                <ul className={classname}>
                     {
                         NavData.map((data)=>
-                        <li key={data}>{data}</li>)
+                        <li key={data}><a href="/">{data}</a></li>)
                     }
                 </ul>
                 <FaBars onClick={navresponce} className="bars"/>
