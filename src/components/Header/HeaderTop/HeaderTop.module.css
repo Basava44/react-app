@@ -39,7 +39,7 @@ a{
 
 @media (max-width:767px)
 {
-    .HeaderItems li:first-child{
+    #root > div > header > div.HeaderTop_HeaderTop__FBIb2 > div > li.assistance{
         display: none;
     }
 }

@@ -7,7 +7,7 @@ const HeaderTop = () => {
     return ( 
         <div className={classes.HeaderTop}>
             <div className={classes.HeaderItems}>
-                <li>Need Assistance?</li>
+                <li className={classes.assistance}>Need Assistance?</li>
                 <li>
                     <select name="user" id="user">
                         <option value="A1029087 - John Carson">A1029087 - John Carson</option>
