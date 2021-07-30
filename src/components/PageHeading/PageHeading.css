@@ -1,0 +1,18 @@
+.PageHeading{
+    background-color: white;
+    margin: 0;
+    padding: 20px 0;
+}
+
+.PageHeading p{
+    font-size: 32px;
+    color: #022737;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+@media (max-width:768px){
+    .PageHeading p{
+        margin-left: 20px;
+    }
+}

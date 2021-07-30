@@ -1,0 +1,24 @@
+.Card{
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+}
+
+.Card p:first-child{
+    font-size: 24px;
+    color: #022737;
+    display: inline;
+    margin-right: 5px;
+}
+
+.Card p:nth-child(4){
+    font-size: 32px;
+    color: #69923a;
+    margin: 10px 0;
+}
+
+.Card p:nth-child(5){
+    font-size: 16px;
+    color: #006778;
+    font-weight: bold;
+}
