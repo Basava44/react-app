@@ -1,0 +1,28 @@
+.FooterBottom{
+    text-align: center;
+}
+
+
+.FooterBottom img{
+    width: 162px;
+    height: 46px;
+    margin: 0;
+}
+
+.FooterBottom p{
+    margin: 0;
+    font-size: 12px;
+    color: #505050;
+}
+
+
+@media (max-width:768px){
+    .FooterBottom p{
+        margin: 0 20px;
+    }
+
+    .FooterBottom img{
+        height: 40px;
+        width: 100px;
+    }
+}

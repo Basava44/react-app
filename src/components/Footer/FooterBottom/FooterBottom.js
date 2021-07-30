@@ -1,0 +1,14 @@
+import React from 'react';
+import './FooterBottom.css'
+import BottomImage from '../../../assets/images/Vanguard_logo_new_2020_1.png';
+
+const FooterBottom = () => {
+    return ( 
+        <div className="FooterBottom">
+            <img src={BottomImage} alt="Image" />
+            <p>© 2019 Vanguard Charitable Endowment Program. VANGUARD and the Vanguard Ship Logo are trademarks of The Vanguard Group, Inc.</p>
+        </div>
+     );
+}
+ 
+export default FooterBottom;

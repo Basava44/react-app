@@ -1,7 +1,9 @@
 .Card{
     background-color: white;
-    margin: 20px;
     padding: 20px;
+    max-width: 1030px;
+    margin: 20px auto;
+    box-sizing: border-box;
 }
 
 .Card p:first-child{
@@ -22,4 +24,16 @@
     color: #006778;
     font-weight: bold;
     cursor: pointer;
+}
+
+@media (max-width:768px){
+    .Card{
+        margin: 20px;
+    }
+}
+
+@media (max-width:1024px) and (min-width:769px){
+    .Card{
+        margin:20px 40px;
+    }
 }
