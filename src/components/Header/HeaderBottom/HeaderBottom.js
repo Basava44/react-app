@@ -27,7 +27,7 @@ const HeaderBottom = () => {
                 <ul className={classname}>
                     {
                         NavData.map((data)=>
-                        <li key={data}><a href="/">{data}</a></li>)
+                        <li key={data}><a href="#">{data}</a></li>)
                     }
                 </ul>
                 <FaBars onClick={navresponce} className="bars"/>

@@ -15,16 +15,16 @@ const FooterTop = () => {
             <div className="media">
                   <img src={Logo} alt="logo" />
                   <br />
-                  <FaLinkedin /><span className="link">Follow us on LinkedIn</span>
+                  <a href="#"><FaLinkedin /> <span className="link">Follow us on LinkedIn</span></a>
                   <br />
                   <p>© 2019 Vanguard Charitable Endowment Program</p>
             </div>
             <div className="links">
                     <div className="col1">
-                        {links1.map(link => <li key={link}>{link}</li>)}
+                        {links1.map(link => <li key={link}><a href="#">{link}</a></li>)}
                     </div>
                     <div className="col2">
-                        {links2.map(link => <li key={link}>{link}</li>)}
+                        {links2.map(link => <li key={link}><a href="#">{link}</a></li>)}
                     </div>
             </div>
             <div className="search">

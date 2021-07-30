@@ -15,8 +15,8 @@ const HeaderTop = () => {
                         <option value="U8764207 - James">U8764207 - James</option>
                     </select>
                 </li>
-                <li><FaEnvelope /></li>
-                <li><FaUser /></li>    
+                <a href="#"><li><FaEnvelope /></li></a>
+                <a href="#"><li><FaUser /></li></a>
             </div>        
         </div>
      );
