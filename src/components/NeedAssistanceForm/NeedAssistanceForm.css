@@ -67,6 +67,15 @@
     display: none;
 }
 
+.HeaderTop_HeaderTop__FBIb2 > div.HeaderTop_viewassistance__1yP_a > svg{
+    font-size: 20px;
+    z-index: 11;
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    cursor: pointer;
+}
+
 @media (max-width:768px){
     .NeedAssistanceForm{
         width: 100%;

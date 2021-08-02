@@ -1,28 +1,19 @@
 import React, {useState} from "react";
-import { FaTimes } from 'react-icons/fa';
+// import { FaTimes } from 'react-icons/fa';
 
 import './NeedAssistanceForm.css';
 
 const NeedAssistanceForm = () => {
 
-    const [classname,setclassname] = useState("NeedAssistanceForm");
-
-    const close = () =>{
-        if(classname === "NeedAssistanceForm")
-            setclassname("NeedAssistanceForm responsive");
-        else
-            setclassname("NeedAssistanceForm");
-    }
-
     return ( 
-        <div className={classname}>
-            <FaTimes onClick={close}/>
+        <div className="NeedAssistanceForm">
+            {/* <FaTimes onClick={close}/> */}
             <p className="title">Need Assistance?</p>
             <p className="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, tempore magnam exercitationem minus nulla, voluptate temporibus nobis nemo voluptatem molestiae cumque cum sit cupiditate vel dolorem corrupti distinctio similique incidunt.</p>
             <p>For answers to other common questions, click here to go to our FAQ section.</p>
 
-            <form onSubmit={close}>
-                <p>Seeking Assistance for </p>
+            <form>
+                <p>Seeking Assistance for</p>
                 <label htmlFor="name">Name: <span className="required">*</span></label>
                 <br/>
                 <input type="text" name="name" id="name" minLength="5" placeholder="Enter your name" required />

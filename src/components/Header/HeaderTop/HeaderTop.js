@@ -1,5 +1,5 @@
 import React from 'react';
-import {FaUser, FaEnvelope} from 'react-icons/fa';
+import {FaUser, FaEnvelope, FaTimes} from 'react-icons/fa';
 import { useState } from 'react/cjs/react.development';
 import NeedAssistanceForm from '../../NeedAssistanceForm/NeedAssistanceForm';
 
@@ -8,14 +8,12 @@ import classes from './HeaderTop.module.css';
 const HeaderTop = () => { 
 
         const [classname, changeclassname] = useState(classes.needassistance);
-
         const viewAssistance = () =>{
             if(classname === classes.needassistance)
                 changeclassname(classes.viewassistance);
             else
                 changeclassname(classes.needassistance);            
         }
-
 
         return ( 
             <div className={classes.HeaderTop}>
@@ -33,6 +31,7 @@ const HeaderTop = () => {
             </div>
             <div className={classname}>
                 <NeedAssistanceForm />
+                <FaTimes onClick={viewAssistance}/>
             </div>
         </div>
         );
