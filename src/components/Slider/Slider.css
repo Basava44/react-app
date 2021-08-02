@@ -1,0 +1,72 @@
+.Slider{
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    background-color: white;
+}
+
+.Slider .featured, .Slider .readmore{
+    padding: 10px;
+}
+
+.Slider .featured p:first-child{
+    color: #5a5a5a;
+}
+
+.Slider .featured p:last-child{
+    color: #022737;
+    font-size: 24px;
+}
+
+.Slider .readmore p:first-child{
+    color: #5a5a5a;
+}
+
+.Slider .readmore span{
+    color: #022737;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.Slider > svg:nth-child(4) > path, .Slider > svg:nth-child(1) > path{
+    font-size: 18px;
+    color: #5a5a5a;
+    border: 1px solid red;
+    border-radius: 50%;
+}
+
+@media (max-width:768px){
+    
+    .Slider{
+        display: block;
+        margin: 20px;
+    }
+    
+    p{
+        margin: 0;
+        padding: 0;
+    }
+
+    .Slider > svg:nth-child(4) > path, .Slider > svg:nth-child(1) > path{
+        display: none;
+    }
+    
+}
+
+@media (max-width:1023px) and (min-width:768px){
+   .Slider{
+       width: 730px;
+       margin: 0 auto;
+       
+   }
+}
+
+@media (max-width:1300px) and (min-width:1024px){
+    .Slider{
+        width: 925px;
+    }
+}

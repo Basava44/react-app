@@ -36,6 +36,14 @@ a{
     color: white;
 }
 
+.needassistance{
+    display: none;
+}
+
+.viewassistance{
+    display: block;
+}
+
 
 @media (max-width:767px)
 {

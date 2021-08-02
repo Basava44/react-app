@@ -11,7 +11,7 @@ const Buttons = () => {
    return(
        <div className="Buttons">
            {ButtonData.map((data)=>
-                <Button title={data} />
+                <Button title={data} key={data}/>
            )}
        </div>
    );

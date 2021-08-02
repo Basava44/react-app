@@ -7,7 +7,7 @@ const NeedAssistanceForm = () => {
 
     const [classname,setclassname] = useState("NeedAssistanceForm");
 
-    const remove = () =>{
+    const close = () =>{
         if(classname === "NeedAssistanceForm")
             setclassname("NeedAssistanceForm responsive");
         else
@@ -16,12 +16,12 @@ const NeedAssistanceForm = () => {
 
     return ( 
         <div className={classname}>
-            <FaTimes onClick={remove}/>
+            <FaTimes onClick={close}/>
             <p className="title">Need Assistance?</p>
             <p className="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, tempore magnam exercitationem minus nulla, voluptate temporibus nobis nemo voluptatem molestiae cumque cum sit cupiditate vel dolorem corrupti distinctio similique incidunt.</p>
             <p>For answers to other common questions, click here to go to our FAQ section.</p>
 
-            <form>
+            <form onSubmit={close}>
                 <p>Seeking Assistance for </p>
                 <label htmlFor="name">Name: <span className="required">*</span></label>
                 <br/>

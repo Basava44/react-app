@@ -48,6 +48,7 @@
 .NeedAssistanceForm label{
     font-size: 18px;
     color: #505050;
+    padding-top: 10px;
 }
 
 .NeedAssistanceForm .required{
@@ -64,4 +65,13 @@
 
 .NeedAssistanceForm.responsive{
     display: none;
+}
+
+@media (max-width:768px){
+    .NeedAssistanceForm{
+        width: 100%;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
 }

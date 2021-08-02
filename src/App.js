@@ -1,26 +1,17 @@
-import './App.css';
-import BalanceCards from './components/BalanceCard/BalanceCards';
+import React from 'react';
+
+import Main from './Pages/Main';
 import Header from './components/Header/Header';
-import Path from './components/Path/Path';
-import PageHeading from './components/PageHeading/PageHeading';
-import Pageinfo from './components/PageInfo/Pageinfo';
 import Footer from './components/Footer/Footer';
-import Buttons from './components/Buttons/Buttons';
 
-
-
-function App() {
-  return (
+const APP = () => {
+  return ( 
     <div className="App">
       <Header />
-      <Path path="Home > Account Overview" />
-      <PageHeading data ="Account Overview" />
-      <Pageinfo />
-      <BalanceCards />
-      <Buttons />
+      <Main />
       <Footer />
     </div>
-  );
+   );
 }
-
-export default App;
+ 
+export default APP;
