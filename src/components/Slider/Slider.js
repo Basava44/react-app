@@ -4,6 +4,7 @@ import './Slider.css';
 import { FaAngleLeft, FaAngleRight, FaArrowRight } from 'react-icons/fa';
 
 const Slider = () => {
+
     return ( 
         <div className="Slider">
             <FaAngleLeft />

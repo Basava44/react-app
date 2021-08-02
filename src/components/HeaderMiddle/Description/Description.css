@@ -1,0 +1,133 @@
+.description{
+    background-color: white;
+    margin: 20px;
+    width: 70%;    
+    box-sizing: border-box;
+    overflow: auto;
+    height: 335px;
+}
+
+.description .heading {
+    display: flex;
+    background-color: #eaeaea;
+    margin: 0;
+    padding: 0;
+}
+
+.description .heading p{
+    padding: 10px 20px;
+    margin:0;
+    border: 0.5px solid #5a5a5a1c;
+}
+
+.description .heading p.active{
+    background-color: white;
+    border-top: 4px solid #006778;
+    border-radius: 1px;
+    border-bottom: none;
+}
+
+.description .content{
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.description .content .maintitle{
+    color: #006778;
+    font-size: 25px;
+    text-decoration: underline;
+    margin: 0;
+}
+
+
+
+.description .content .data .items{
+    display: inline-block;
+    padding: 0 45px;
+    margin: 0;
+}
+
+.description .content .data .items:nth-child(5)
+{
+    margin-left: 55px;
+}
+
+.description .content .data .items:nth-child(6)
+{
+    margin-left: 40px;
+}
+
+.description .content .info{
+    margin: 10px 0 0;
+}
+
+.description .content .data .items .title, .description .content .info{
+    color: #5a5a5a;
+}
+
+.description .content .data .items p:nth-child(2){
+    color: #006778;
+    font-weight: bold;
+}
+
+.description .content .activity{
+    color: #006778;
+    font-weight: bold;
+}
+
+.description .content .features.hide{
+    display: none;
+}
+
+
+
+
+@media (max-width:768px) and (min-width:426px){
+    .description{
+        margin: 0 20px;
+        box-sizing: border-box;
+        overflow-x: auto;
+        width: auto;
+    }
+
+    .description .content .data .items{
+        padding: 10px 50px;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width:425px)
+{
+
+    .description{
+        width: auto;
+    }
+
+    .description .content .data .items{
+        padding: 20px;
+    }
+
+    .description .content .data .items:nth-child(4)
+    {
+        margin-right: 25px;
+    }
+
+    .description .content .data .items:nth-child(5)
+    {
+        margin-left: 0px;
+    }
+
+    .description .content .data .items:nth-child(6)
+    {
+        margin-left: 40px;
+    }
+
+}
+
+@media (width:1024px){
+    .description{
+        width: 60%;
+        margin: 20px 50px 20px 0;
+    }
+}

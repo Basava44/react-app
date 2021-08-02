@@ -32,9 +32,15 @@
     }
 }
 
-@media (max-width:1024px) and (min-width:768px){
+@media (max-width:1023px) and (min-width:768px){
     .Card{
-        margin:20px 50px;
-        /* width: 350px; */
+        margin:10px;
+        width: 350px;
+    }
+}
+
+@media (width:1024px) {
+    .Card{
+        margin-left:60px;
     }
 }

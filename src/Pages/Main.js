@@ -3,9 +3,11 @@ import React from 'react';
 import Path from '../components/Path/Path';
 import PageHeading from '../components/PageHeading/PageHeading';
 import Pageinfo from '../components/PageInfo/Pageinfo';
-import BalanceCards from '../components/BalanceCard/BalanceCards';
 import Buttons from '../components/Buttons/Buttons';
 import Slider from '../components/Slider/Slider';
+import HeaderMiddle from '../components/HeaderMiddle/HeaderMiddle';
+
+
 
 const Main = () => {
     return ( 
@@ -13,9 +15,11 @@ const Main = () => {
         <Path path="Home > Account Overview" />
         <PageHeading data ="Account Overview" />
         <Pageinfo />
-        <BalanceCards />
+        <HeaderMiddle />
         <Buttons />
         <Slider />
+
+        
       </main>
      );
 }
