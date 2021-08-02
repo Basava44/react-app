@@ -1,0 +1,67 @@
+.NeedAssistanceForm{
+    background-color: white;
+    position: absolute;
+    width: 50%;
+    top: 0;
+    right: 0;
+    padding: 20px 50px;
+    z-index: 1;
+    height: 100vh;
+    overflow: auto;
+}
+
+.NeedAssistanceForm .title{
+    font-size: 36px;
+    color: #022737;
+}
+
+.NeedAssistanceForm .paragraph{
+    color: #505050;
+    font-size: 16px;
+    padding-top: 15px;
+    line-height: 1.5;
+    width: 90%;
+}
+
+.NeedAssistanceForm > p:nth-child(4){
+    color: #022737;
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 30px;
+    line-height: 1.5;
+}
+
+.NeedAssistanceForm input{
+    width: 200px;
+    height: 30px;
+}
+
+.NeedAssistanceForm button{
+    width: 90px;
+    height: 40px;
+    background-color: #022737;
+    border: none;
+    color: white;
+    margin: 20px 0;
+}
+
+.NeedAssistanceForm label{
+    font-size: 18px;
+    color: #505050;
+}
+
+.NeedAssistanceForm .required{
+    color: red;
+}
+
+.NeedAssistanceForm svg {
+    font-size: 24px;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    cursor: pointer;
+}
+
+.NeedAssistanceForm.responsive{
+    display: none;
+}

@@ -2,7 +2,6 @@ import React, {useState} from "react";
 import './HeaderBottom.css';
 import Logo from '../../../assets/images/logo.png';
 import { FaBars } from "react-icons/fa";
-// import classes from "./HeaderBottom.module.css"
 
 
 

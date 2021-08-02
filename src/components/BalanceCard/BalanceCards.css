@@ -1,0 +1,6 @@
+@media (max-width:1023px) and (min-width:768px){
+    .BalanceCards{
+        display: flex;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,37 @@
+.Pageinfo{
+    background-color: white;    
+}
+
+.Pageinfo .data{
+    margin: 0 auto;
+    max-width: 1024px;
+    padding: 0 20px;
+}
+
+
+.Pageinfo .data .title{
+    color: #022737;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0;
+}
+
+.Pageinfo .data p:nth-child(2){
+    color: #505050;
+    font-size: 16px;
+    margin: 0;
+    line-height: 1.5;
+    padding-bottom: 20px;
+}
+
+@media (max-width:768px){
+    .Pageinfo .data{
+        margin-left: 2px;
+    }
+}
+
+@media (max-width:1024px) and (min-width:769px){
+    .Pageinfo .data{
+        margin:0 25px;
+    }
+}
