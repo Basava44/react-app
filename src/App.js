@@ -7,6 +7,7 @@ import Pageinfo from './components/PageInfo/Pageinfo';
 import Footer from './components/Footer/Footer';
 import Buttons from './components/Buttons/Buttons';
 import Slider from './components/Slider/Slider';
+import Main from './Pages/Main';
 
 
 
@@ -15,13 +16,15 @@ function App() {
     <div className="App">
       
       <Header />
-      <Path path="Home > Account Overview" />
+      {/* <Path path="Home > Account Overview" />
       <PageHeading data ="Account Overview" />
       <Pageinfo />
       <BalanceCards />
       <Buttons />
-      <Slider />
+      <Slider /> */}
+      <Main />
       <Footer />
+
     </div>
   );
 }
