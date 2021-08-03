@@ -23,7 +23,7 @@
 .description .heading p.active{
     background-color: white;
     border-top: 4px solid #006778;
-    border-radius: 1px;
+    border-radius: 2px;
     border-bottom: none;
 }
 
@@ -74,6 +74,7 @@
 .description .content .activity{
     color: #006778;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .description .content .features.hide{
