@@ -6,7 +6,7 @@ import {FaArrowRight, FaRightArrow} from 'react-icons/fa'
 
 const Description = () => {
 
-    const [active,changeclass] = useState('');
+    
 
     const x = ["Grants","Contribution","Exchange","Other Transactions"];
 
