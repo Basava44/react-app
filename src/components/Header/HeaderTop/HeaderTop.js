@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { useState } from 'react/cjs/react.development';
 import NeedAssistanceForm from '../../NeedAssistanceForm/NeedAssistanceForm';
 
-import classes from './HeaderTop.module.css';
+import './HeaderTop.css';
 
 
 
@@ -13,18 +13,18 @@ const HeaderTop = (props) => {
         props.change(e.target.value);
     }
 
-        const [classname, changeclassname] = useState(classes.needassistance);
+        const [classname, changeclassname] = useState("needassistance");
         const viewAssistance = () =>{
-            if(classname === classes.needassistance)
-                changeclassname(classes.viewassistance);
+            if(classname === "needassistance")
+                changeclassname("viewassistance");
             else
-                changeclassname(classes.needassistance);            
+                changeclassname("needassistance");            
         }
 
         return ( 
-            <div className={classes.HeaderTop}>
-            <div className={classes.HeaderItems}>
-                <li className={classes.assistance} onClick={viewAssistance}>Need Assistance?</li>
+            <div className="HeaderTop">
+            <div className="HeaderItems">
+                <li className="assistance" onClick={viewAssistance}>Need Assistance?</li>
                 <li>
                     <select name="user" id="user" onChange={userchange}>
                         <option value="A1029087 - John Carson">A1029087 - John Carson</option>

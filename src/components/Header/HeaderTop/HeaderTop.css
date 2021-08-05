@@ -44,7 +44,13 @@ a{
     display: block;
 }
 
-
+#root > div > header > div.HeaderTop > div.viewassistance > svg{
+    font-size: 25px;
+    position: absolute;
+    z-index: 10;
+    top: 20px;
+    right: 40px;
+}
 
 
 @media (max-width:767px)
