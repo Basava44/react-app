@@ -1,11 +1,19 @@
 import React from 'react';
 import {FaUser, FaEnvelope, FaTimes} from 'react-icons/fa';
+import { connect } from 'react-redux';
 import { useState } from 'react/cjs/react.development';
+import { change } from '../../../store/actions/userAction';
 import NeedAssistanceForm from '../../NeedAssistanceForm/NeedAssistanceForm';
 
 import classes from './HeaderTop.module.css';
 
-const HeaderTop = () => { 
+
+
+const HeaderTop = (props) => { 
+    console.log(props);
+    const userchange = (e) =>{
+        props.change(e.target.value);
+    }
 
         const [classname, changeclassname] = useState(classes.needassistance);
         const viewAssistance = () =>{
@@ -20,7 +28,7 @@ const HeaderTop = () => {
             <div className={classes.HeaderItems}>
                 <li className={classes.assistance} onClick={viewAssistance}>Need Assistance?</li>
                 <li>
-                    <select name="user" id="user">
+                    <select name="user" id="user" onChange={userchange}>
                         <option value="A1029087 - John Carson">A1029087 - John Carson</option>
                         <option value="G6239387 - Alex Arun">G6239387 - Alex Arun</option>
                         <option value="C1047392 - Chris Evan">C1047392 - Chris Evan</option>
@@ -36,5 +44,19 @@ const HeaderTop = () => {
         </div>
         );
 }
+
+
+const mapStateToProps = (state) =>{
+    return state;
+}
+
+const mapDispathToProps = (dispath) =>{
+    return{
+        change : (value) =>{
+            dispath({type:"CHANGE_USER",value})
+        }
+    }
+}
+
  
-export default HeaderTop;
+export default connect(mapStateToProps,mapDispathToProps)(HeaderTop);

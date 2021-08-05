@@ -2,8 +2,9 @@ import React, {useState} from "react";
 // import { FaTimes } from 'react-icons/fa';
 
 import './NeedAssistanceForm.css';
+import { connect } from 'react-redux';
 
-const NeedAssistanceForm = () => {
+const NeedAssistanceForm = (props) => {
 
     return ( 
         <div className="NeedAssistanceForm">
@@ -13,7 +14,7 @@ const NeedAssistanceForm = () => {
             <p>For answers to other common questions, click here to go to our FAQ section.</p>
 
             <form>
-                <p>Seeking Assistance for</p>
+                <p>Seeking Assistance for <span id="user">{props.user}</span></p>
                 <label htmlFor="name">Name: <span className="required">*</span></label>
                 <br/>
                 <input type="text" name="name" id="name" minLength="5" placeholder="Enter your name" required />
@@ -33,5 +34,11 @@ const NeedAssistanceForm = () => {
         </div>
      );
 }
+
+const mapStateToProps = (state) => {
+    return{
+        user : state.user
+    }
+}
  
-export default NeedAssistanceForm;
+export default connect(mapStateToProps)(NeedAssistanceForm);

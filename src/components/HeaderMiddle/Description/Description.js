@@ -113,27 +113,27 @@ const Description = () => {
                     <div className="data">
                         <div className="items">
                             <p className="title">Entered Date</p>
-                            <p className="EnteredDate">18/7/1778</p>
+                            <p className="EnteredDate">10/11/1948</p>
                         </div>
                         <div className="items">
                             <p className="title">Received Date</p>
-                            <p className="ReceivedDate">15/4/1994</p>
+                            <p className="ReceivedDate">1/09/2004</p>
                         </div>
                         <div className="items">
                             <p className="title">Number of Shares</p>
-                            <p className="NumberofShares">89</p>
+                            <p className="NumberofShares">78</p>
                         </div>
                         <div className="items">
                             <p className="title">Type</p>
-                            <p className="Type">Halo</p>
+                            <p className="Type">none</p>
                         </div>
                         <div className="items">
                             <p className="title">Amount</p>
-                            <p className="Amount">30000</p>
+                            <p className="Amount">3000</p>
                         </div>
                         <div className="items">
                             <p className="title">Status</p>
-                            <p className="Status">high</p>
+                            <p className="Status">active</p>
                         </div>                        
                     </div>
                     <br />
@@ -146,19 +146,19 @@ const Description = () => {
                     <div className="data">
                         <div className="items">
                             <p className="title">Entered Date</p>
-                            <p className="EnteredDate">18/7/1778</p>
+                            <p className="EnteredDate">06/01/2000</p>
                         </div>
                         <div className="items">
                             <p className="title">Received Date</p>
-                            <p className="ReceivedDate">15/4/1994</p>
+                            <p className="ReceivedDate">01/02/1962</p>
                         </div>
                         <div className="items">
                             <p className="title">Number of Shares</p>
-                            <p className="NumberofShares">89</p>
+                            <p className="NumberofShares">589</p>
                         </div>
                         <div className="items">
                             <p className="title">Type</p>
-                            <p className="Type">Halo</p>
+                            <p className="Type">fixed</p>
                         </div>
                         <div className="items">
                             <p className="title">Amount</p>

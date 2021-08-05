@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './Button.css';
-import {FaArrowRight, FaAngleDown} from 'react-icons/fa'
+import {FaArrowRight} from 'react-icons/fa'
 
 
 const Button = (props) => {

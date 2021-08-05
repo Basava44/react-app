@@ -51,6 +51,11 @@
     padding-top: 10px;
 }
 
+form span#user{
+    color: #022737;
+    font-weight: bold;
+}
+
 .NeedAssistanceForm .required{
     color: red;
 }
