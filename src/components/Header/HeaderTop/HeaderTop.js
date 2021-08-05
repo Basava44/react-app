@@ -13,9 +13,9 @@ const HeaderTop = (props) => {
         props.change(e.target.value);
     }
 
-        const [classname, changeclassname] = useState("needassistance");
+        const [x, changeclassname] = useState("needassistance");
         const viewAssistance = () =>{
-            if(classname === "needassistance")
+            if(x === "needassistance")
                 changeclassname("viewassistance");
             else
                 changeclassname("needassistance");            
@@ -35,7 +35,7 @@ const HeaderTop = (props) => {
                 <a href="#"><li><FaEnvelope /></li></a>
                 <a href="#"><li><FaUser /></li></a>
             </div>
-            <div className={classname}>
+            <div className={x}>
                 <NeedAssistanceForm />
                 <FaTimes onClick={viewAssistance}/>
             </div>
