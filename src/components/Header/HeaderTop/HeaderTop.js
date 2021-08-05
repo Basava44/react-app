@@ -2,7 +2,6 @@ import React from 'react';
 import {FaUser, FaEnvelope, FaTimes} from 'react-icons/fa';
 import { connect } from 'react-redux';
 import { useState } from 'react/cjs/react.development';
-import { change } from '../../../store/actions/userAction';
 import NeedAssistanceForm from '../../NeedAssistanceForm/NeedAssistanceForm';
 
 import classes from './HeaderTop.module.css';
