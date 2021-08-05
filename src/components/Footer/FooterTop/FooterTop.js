@@ -13,7 +13,7 @@ const FooterTop = () => {
         <div className={classes.FooterTop}>
             <div className={classes.content}>
             <div className={classes.media}>
-                  <img src={Logo} alt="logo" />
+                  <img src={Logo} alt="logo" title="vanguard" />
                   <br />
                   <a href="#"><FaLinkedin /> <span className={classes.link}>Follow us on LinkedIn</span></a>
                   <br />

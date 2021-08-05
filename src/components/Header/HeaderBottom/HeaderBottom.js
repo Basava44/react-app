@@ -22,7 +22,7 @@ const HeaderBottom = () => {
     return ( 
         <div className="HeaderBottom">
             <nav className="navbar">
-                <img src={Logo} alt='logo' />
+                <img src={Logo} alt='logo' title="vanguard Logo" />
                 <ul className={classname}>
                     {
                         NavData.map((data)=>

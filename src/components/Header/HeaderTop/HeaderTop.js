@@ -44,9 +44,7 @@ const HeaderTop = (props) => {
 }
 
 
-const mapStateToProps = (state) =>{
-    return state;
-}
+
 
 const mapDispathToProps = (dispath) =>{
     return{
@@ -57,4 +55,4 @@ const mapDispathToProps = (dispath) =>{
 }
 
  
-export default connect(mapStateToProps,mapDispathToProps)(HeaderTop);
+export default connect(null,mapDispathToProps)(HeaderTop);
