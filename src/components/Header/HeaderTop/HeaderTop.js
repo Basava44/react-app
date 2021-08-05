@@ -9,7 +9,6 @@ import classes from './HeaderTop.module.css';
 
 
 const HeaderTop = (props) => { 
-    console.log(props);
     const userchange = (e) =>{
         props.change(e.target.value);
     }
